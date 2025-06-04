@@ -34,10 +34,10 @@ const Connections = () => {
 
             <div className="flex flex-col gap-4 w-full max-w-md">
                 {connections.map((connection, index) => {
-                    const { photoUrl, firstName, lastName, about, age, gender } = connection;
+                    const {_id, photoUrl, firstName, lastName, about, age, gender } = connection;
                     return (
                         <div
-                            key={index}
+                            key={_id}
                             className="bg-gray-800 text-white p-4 rounded-lg flex items-center shadow-md"
                         >
                             <img
